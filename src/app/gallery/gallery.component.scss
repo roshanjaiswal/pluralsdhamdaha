@@ -1,0 +1,22 @@
+.gallery {
+    .mat-tab-group {
+        margin-bottom: 48px;
+    }
+    .thumbnail {
+        height: 200px;
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 120px;
+        }
+    }
+    .pluralsImages, .dhamdahaImages {
+        clear: both;
+    }
+    .youTubeVideo {
+        height: 250px;
+        width: 300px;
+        padding-top: 14px;
+    }
+}

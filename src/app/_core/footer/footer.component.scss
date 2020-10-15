@@ -1,0 +1,30 @@
+.globalFooter {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    right: 0;
+    @media screen and (min-width: 701px) {
+        width: calc(100% - 200px);
+    }
+    width: 100%;
+    min-height: 200px;
+    background-color: black;
+    padding: 10px 30px;
+    .footer-header {
+        font-size: 47px;
+        font-family: ZapfinoExtraLT-One;
+        font-weight: bold;
+    }
+    .pushpamPriya {
+        font-family: ZapfinoExtraLT-Two;
+        font-size: 25px;
+    }
+    i.fa.fa-whatsapp {
+        color: green;
+    }
+    .whatsApp {
+        text-transform: uppercase;
+        font-family: ZapfinoForteLTPro;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="mobileMenu" (click)="hideMobileNav = !hideMobileNav">
+	<button class="btn"><i class="glyphicon glyphicon-list"></i></button>
+</div>
+
+<div class="sidebar" [ngClass]="{hideMobileNav: hideMobileNav}">
+  <nav>
+	  <a routerLink="/home" routerLinkActive="active"><span><i class="glyphicon glyphicon-home"></i>Home</span></a>
+	  <a routerLink="/about-dhamdaha" routerLinkActive="active"><span>About Dhamdaha</span></a>
+	  <a routerLink="/about-rakesh" routerLinkActive="active"><span>About Rakesh</span></a>
+	  <a routerLink="/about-plurals" routerLinkActive="active"><span>About Plurals</span></a>
+	  <a routerLink="/gallery" routerLinkActive="active"><span>Gallery</span></a>
+	  <a routerLink="/contacts" routerLinkActive="active"><span>Contacts</span></a>
+	  <a routerLink="/volunteer" routerLinkActive="active"><span>Volunteer</span></a>
+	  <a routerLink="/donation" routerLinkActive="active"><span>Donation</span></a>
+  </nav>
+</div>

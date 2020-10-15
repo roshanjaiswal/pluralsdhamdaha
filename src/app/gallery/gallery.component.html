@@ -1,0 +1,67 @@
+<div class="gallery">
+    <div class="pageHeader">Gallery</div>
+    <mat-tab-group mat-align-tabs="start" disableRipple>
+        <mat-tab label="Images">
+            <div class="pluralsImages">
+                <h1 class="subheader">Plurals</h1>
+                <div class="col-md-3" *ngFor="let item of galleryImages; let i = index">
+                    <div class="thumbnail">
+                    <a href="../../assets/images/gallery/{{item.image}}">
+                        <img src="../../assets/images/gallery/{{item.image}}" alt="icon" style="width:100%">
+                        <div class="caption">
+                            <div class="location">{{item.location}}</div>
+                            <p>{{item.decription}}</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dhamdahaImages">
+                <h1 class="subheader">Dhamdaha</h1>
+                <div class="col-md-3" *ngFor="let item of dhamdahaImages; let i = index">
+                    <div class="thumbnail">
+                    <a href="../../assets/images/gallery/dhamdaha/{{item.image}}">
+                        <img src="../../assets/images/gallery/dhamdaha/{{item.image}}" alt="icon" style="width:100%">
+                        <div class="caption">
+                            <div class="location">{{item.location}}</div>
+                            <p>{{item.decription}}</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Videos">
+            <div class="youTubeVideo col-sm-4" >
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/etvkImEYWxY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="youTubeVideo col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vawHVd7anRs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="youTubeVideo col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oruhVHj8JsM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="youTubeVideo col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2FRakeshJhaSukhsena%2Fvideos%2F3161095510783841%2F&show_text=false&width=560" width="560" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+            <div class="youTubeVideo col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GDxXQ6EKkUs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="youTubeVideo col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JZCOAFbWjAQ" allowfullscreen></iframe>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
